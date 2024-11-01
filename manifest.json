@@ -1,0 +1,49 @@
+{
+    "name": "VoluntaRios",
+    "short_name": "VoluntaRios",
+    "description": "Um site para conectar voluntários a projetos comunitários",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50",
+    "icons": [
+      {
+        "src": "icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "screenshot1.png",
+        "type": "image/png",
+        "sizes": "540x720"
+      }
+    ],
+    "shortcuts": [
+      {
+        "name": "Página Principal",
+        "short_name": "Principal",
+        "url": "/index.html"
+      },
+      {
+        "name": "Se Voluntarie",
+        "short_name": "Voluntarie",
+        "url": "/voluntarie.html"
+      }
+    ],
+    "display_override": ["standalone", "fullscreen"],
+    "protocol_handlers": [
+      {
+        "protocol": "web+voluntarios",
+        "url": "/?action=%s"
+      }
+    ]
+  }
+  

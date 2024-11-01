@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js")
+      .then(() => console.log("Service Worker registrado com sucesso."))
+      .catch(error => console.log("Falha ao registrar o Service Worker:", error));
+  }
+</script>
+
+  <title>VoluntaRios</title>
+</head>
+<body>
+    <header>
+      <h1>VoluntaRios</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Página Principal</a></li>
+          <li><a href="quem-somos.html">Quem Somos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="se-voluntarie.html">Se Voluntarie</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Bem-vindo à Página Principal</h2>
+      <p>Você está logado!</p>
+    </main>
+    <script src="app.js"></script>
+  </body>
+  </html>
