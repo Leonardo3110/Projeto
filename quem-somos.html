@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js")
+        .then(() => console.log("Service Worker registrado com sucesso."))
+        .catch(error => console.log("Falha ao registrar o Service Worker:", error));
+    }
+  </script>
+  <title>Quem Somos - VoluntaRios</title>
+</head>
+<body>
+  <header>
+    <h1>VoluntaRios</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Página Principal</a></li>
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="se-voluntarie.html">Se Voluntarie</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="info-section">
+      <h2>Quem Somos</h2>
+      <p>
+        O <strong>VoluntaRios</strong> é uma plataforma dedicada a conectar pessoas interessadas em contribuir com suas comunidades através de ações voluntárias. 
+        Nosso propósito é promover o impacto social positivo, facilitando a interação entre voluntários e organizações não governamentais (ONGs).
+      </p>
+      <p>
+        Criamos um ambiente intuitivo onde você pode descobrir iniciativas que combinam com seus interesses e habilidades, além de fortalecer sua rede de contatos 
+        com outros voluntários e instituições. Acreditamos no poder da solidariedade para transformar vidas e construir um mundo mais justo.
+      </p>
+      <h3>O que Oferecemos:</h3>
+      <ul>
+        <li>Uma plataforma fácil de usar para encontrar oportunidades de voluntariado;</li>
+        <li>Conexão direta com ONGs e projetos sociais;</li>
+        <li>Espaço para compartilhar histórias, experiências e aprendizado.</li>
+      </ul>
+      <p>
+        Junte-se a nós e faça a diferença em sua comunidade!
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 VoluntaRios. Todos os direitos reservados.</p>
+      <p>
+        <a href="#">Facebook</a> | 
+        <a href="#">Instagram</a> | 
+        <a href="#">Twitter</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -5,32 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
-<script>
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("sw.js")
-      .then(() => console.log("Service Worker registrado com sucesso."))
-      .catch(error => console.log("Falha ao registrar o Service Worker:", error));
-  }
-</script>
-
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js")
+        .then(() => console.log("Service Worker registrado com sucesso."))
+        .catch(error => console.log("Falha ao registrar o Service Worker:", error));
+    }
+  </script>
   <title>VoluntaRios</title>
 </head>
 <body>
-    <header>
-      <h1>VoluntaRios</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Página Principal</a></li>
-          <li><a href="quem-somos.html">Quem Somos</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="se-voluntarie.html">Se Voluntarie</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
+  <header>
+    <h1>VoluntaRios</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Página Principal</a></li>
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="como-participar.html">Como Participar?</a></li>
+      </ul>
+    </nav>    
+    
+  </header>
+
+  <main>
+    <section class="info-section">
       <h2>Bem-vindo à Página Principal</h2>
-      <p>Você está logado!</p>
-    </main>
-    <script src="app.js"></script>
-  </body>
-  </html>
+      
+      <h3>Sobre o VoluntaRios</h3>
+      <p>O <strong>VoluntaRios</strong> é uma plataforma que conecta pessoas interessadas em ajudar comunidades locais por meio de ações voluntárias. Nosso objetivo é criar um impacto positivo, fortalecendo laços entre voluntários e organizações.</p>
+
+      <h3>Como Funciona?</h3>
+      <p>A plataforma é simples e intuitiva. Você pode:</p>
+      <ul>
+        <li> Criar uma conta e acessar oportunidades de voluntariado.</li>
+        <li> Procurar ações que combinem com seus interesses e habilidades.</li>
+        <li> Conectar-se com ONGs e participar de projetos incríveis.</li>
+      </ul>
+
+      <h3>Benefícios de Ser Voluntário</h3>
+      <p>Participar de ações voluntárias oferece muitos benefícios, como:</p>
+      <ul>
+        <li>Desenvolvimento pessoal e profissional.</li>
+        <li>Fortalecimento de habilidades de trabalho em equipe.</li>
+        <li>Impacto positivo na vida de outras pessoas.</li>
+      </ul>
+    </section>
+
+    <div class="image-container">
+      <img src="rio.jpg" alt="Grupo de voluntários">
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 VoluntaRios. Todos os direitos reservados.</p>
+      <p>
+        <a href="#">Facebook</a> | 
+        <a href="#">Instagram</a> | 
+        <a href="#">Twitter</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

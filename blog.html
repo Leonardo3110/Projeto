@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js")
+        .then(() => console.log("Service Worker registrado com sucesso."))
+        .catch(error => console.log("Falha ao registrar o Service Worker:", error));
+    }
+  </script>
+  <title>Blog - VoluntaRios</title>
+</head>
+<body>
+  <header>
+    <h1>VoluntaRios</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Página Principal</a></li>
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="como-participar.html">Como Participar?</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Conteúdo do Blog virá aqui futuramente -->
+    <section class="blog-section">
+      <p>Em breve, teremos artigos e novidades sobre o voluntariado e as iniciativas do VoluntaRios. Fique ligado!</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 VoluntaRios. Todos os direitos reservados.</p>
+      <p>
+        <a href="#">Facebook</a> | 
+        <a href="#">Instagram</a> | 
+        <a href="#">Twitter</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
